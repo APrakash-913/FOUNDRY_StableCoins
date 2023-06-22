@@ -1,0 +1,10 @@
+1. ⚓ Relative Stability: Anchored or pegged -> $1.00
+    a. Chainlink PriceFeed
+    b. Set a func to exchange ETH & BTC
+
+2. ⚙️ Stability Mechanism (Minting): Algorithmic (Decentralized)
+    a. People can only mint stablecoin with enough collateral
+
+3. 🪙 Collateral: Exogenous (Crypto)
+    a. wETH
+    b. wBTC
