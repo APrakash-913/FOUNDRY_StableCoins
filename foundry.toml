@@ -4,4 +4,18 @@ out = "out"
 libs = ["lib"]
 remappings=['@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/']
 
+[invariant]
+runs = 128
+depth = 128
+fail_on_revert = false
+
+# ~~> fail_on_revert: False
+# GOOD for "Competitive Audits"
+# PROS: - Very quickly write Opentesting Funcs with min Handler Funcs which are perfect
+# CONS: - No way to check if the calls made by FOUNDRY make ant sense or not.
+
+# ~~> fail_on_revert: true
+# PROS: - Narrow dow the tests to escape unnecessary calls
+# CONS: - If we Narrow down th handler too much => We might miss the EDGECASES which can break system.
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
